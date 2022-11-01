@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS magical_db;
+
+CREATE DATABASE magical_db;
