@@ -24,7 +24,6 @@ const sess = {
   })
 };
 
-//app.use(routes)
 app.use(session(sess));
 
 const hbs = exphbs.create({ helpers });
@@ -36,7 +35,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use(require('./controllers/'));
 app.use(routes);
 
 app.listen(PORT, () => {
